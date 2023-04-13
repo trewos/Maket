@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mynerve&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: url('fonts/OpenSansCondensed-Light.ttf') format('truetype'),
-  url('fonts/OpenSansCondensed-Light.woff') format('woff');
+  src: url('../fonts/OpenSansCondensed-Light.ttf') format('truetype'),
+  url('../fonts/OpenSansCondensed-Light.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
 }
 /* Обнулення CSS стилів */
 
@@ -106,7 +105,7 @@ h6 {
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 10px
+  padding: 0 10px;
 }
 
 .container .block {
@@ -119,11 +118,15 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-right: auto;
+  margin: 65px auto 65px 0;
+}
+
+.block .header__contacts {
+  margin: 39px 0 75px auto;
 }
 
 .header__companyName {
-  margin: 65px 0 65px 10px;
+  margin-left: 10px;
   font-family: 'PT Sans', sans-serif;
   line-height: 22px;
   color: #777777;
@@ -147,12 +150,11 @@ h6 {
   font-size: 40px;
   text-align: right;
   color: #777777;
-  margin: 45px 0 80px auto;
 }
 
 .header__contacts__telephone {
   color: #777777;
-  line-height: 44px;
+  line-height: 46px;
 }
 
 .header__contacts__button {
@@ -169,13 +171,61 @@ h6 {
   height: 30px;
 }
 
+/* Menu */
+
+menu {
+  width: 100%;
+  background: #777777;
+}
+
+.menu__container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-toggle-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin: 25px auto;
+}
+
+.navbar-menu a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #c9c9c9
+}
+
+/* Адаптив */
+
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
-
-  .container .block {
-    height: 230px;
+  .menu__container {
+    max-width: 768px;
+  }
+  .navbar-menu a{
+    font-size: 25px;
   }
 }
 
@@ -184,8 +234,16 @@ h6 {
     max-width: 667px;
   }
 
-  .container .block {
-    height: 173px;
+  .menu__container {
+    max-width: 667px;
+  }
+
+  .block .header__name {
+    margin: 49px auto 49px 0;
+  }
+
+  .block .header__contacts {
+    margin: 29px 0 56px auto;
   }
 
   .header__logo img {
@@ -211,7 +269,7 @@ h6 {
 
   .header__contacts__telephone {
     color: #777777;
-    line-height: 33px;
+    line-height: 35px;
   }
 
   .header__contacts__button {
@@ -219,14 +277,16 @@ h6 {
     border-bottom: 2px dashed #777777;
     height: 23px;
   }
+  .navbar-menu a{
+    font-size: 20px;
+  }
 }
-
-/* Адаптив */
 
 @media (max-width: 568px) {
   .container {
     max-width: 467px;
     margin: 0 auto;
+    position: relative;
   }
 
   .container .block {
@@ -250,8 +310,15 @@ h6 {
     height: 75px;
   }
 
-  .header__name {
+  .block .header__name {
     margin: 0 0 auto 0;
+  }
+
+  .block .header__contacts {
+    margin: auto 0 0 0;
+  }
+
+  .header__name {
     padding: 5px;
     align-items: center;
   }
@@ -277,7 +344,6 @@ h6 {
     line-height: 34px;
     padding: 5px;
     align-items: center;
-    margin: auto 0 0 0;
   }
 
   .header__contacts__telephone {
@@ -290,5 +356,40 @@ h6 {
     border-bottom: 2px dashed #777777;
     height: 23px;
     margin: 0 auto;
+  }
+  menu {
+    position: absolute;
+  }
+  .menu__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    max-width: 467px;
+    margin: 0 auto;
+  }
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    background: #888888;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    align-items: center;
+    margin: 0;
   }
 }
