@@ -8,13 +8,12 @@
 </head>
 <body>
 <header class="header">
-  <div class="container">
-    <div class="block">
-      <div class="header__name">
+    <div class="header__container">
+      <div class="header__company">
         <div class="header__logo">
           <a href="#"><img src="https://www.colorhexa.com/77777f.png" alt="logo" width="100px" height="100px"></a>
         </div>
-        <div class="header__companyName">
+        <div class="header__name">
           <h2 class="header__name__h">Назва<br>
             компанії</h2>
           <p class="header__name__p">найкраща компанія</p>
@@ -28,31 +27,39 @@
           <li class="header__contacts__item">
             <a class="header__contacts__telephone" href="tel:+380667776655">+3 8(066) 777-66-55</a><br>
           </li>
-          <li class="header__contacts__item"><button class="header__contacts__button" type="submit">Зворотній зв'язок</button></li>
+          <li class="header__contacts__item"><a class="header__contacts__feedback" href="#">Зворотній зв'язок</a></li>
         </ul>
       </div>
     </div>
-  </div>
 </header>
-<menu>
+<menu class="menu">
   <div class="menu__container">
-    <nav class="navbar">
-      <div class="navbar-toggle">
-        <span class="navbar-toggle-icon"></span>
-      </div>
-      <ul class="navbar-menu">
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка і оплата</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li><a href="#">Контакти</a></li>
+    <div class="menu__toggle">
+      <span class="menu__toggle__icon"></span>
+    </div>
+      <ul class="menu__list">
+        <li class="menu__list__item"><a href="#">Головна</a></li>
+        <li class="menu__list__item"><a href="#">Каталог</a></li>
+        <li class="menu__list__item"><a href="#">Доставка і оплата</a></li>
+        <li class="menu__list__item"><a href="#">Прайс-лист</a></li>
+        <li class="menu__list__item"><a href="#">Контакти</a></li>
       </ul>
-    </nav>
   </div>
 </menu>
-<slider>
-</slider>
+  <div class="slider">
+    <div class="slider__container">
+      <div class="slider__item">
+        <img src="img/slider/item/slider__item1.png" alt="slider__item1">
+      </div>
+      <div class="slider__item">
+        <img src="img/slider/item/slider__item2.png" alt="slider__item2">
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
+
+
