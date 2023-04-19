@@ -196,13 +196,13 @@ h6 {
 .slider {
   margin: 0 auto;
   width: 100%;
-  position: relative;
   z-index: 1015;
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
+  height: auto;
 }
 
 .slider__container {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -231,7 +231,6 @@ h6 {
   top: 55%;
   font-size: 0;
 }
-
 .slick-prev {
   left: 25%;
   background: url('../img/slider/arrows/slider__arrows__left.jpg') 0 0/ 100% no-repeat;
@@ -241,6 +240,144 @@ h6 {
   background: url('../img/slider/arrows/slider__arrows__right.jpg') 0 0 / 100% no-repeat;
 }
 
+/* Content */
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+.content__container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.content__way {
+  display: flex;
+  flex-direction: row;
+}
+.content__way li {
+  position: relative;
+  padding: 0 20px 0 0;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: underline #767676;
+}
+.content__way a {
+  color: #767676;
+}
+.content__way li::after {
+  position: absolute;
+  color: #767676;
+  content: "/";
+  right: 9px;
+}
+.content__way li:last-child::after {
+  content: "";
+}
+.content__way li:last-child {
+  text-decoration: none;
+}
+.content__block {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+.content__category {
+  width: 178px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767676;
+}
+.content__category ul li {
+  list-style: inside;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.content__category ul {
+  margin-left: 25px;
+}
+.content__category a {
+  color: #767676;
+}
+.content__category li a:hover {
+  text-decoration: underline black;
+  color: black;
+  font-weight: bold;
+}
+.content__category p:hover {
+  text-decoration: underline;
+}
+.content__category__auto__sub,
+.content__category__happliances__sub,
+.content__category__mobile__sub,
+.content__category__pc__sub,
+.content__category__house__sub,
+.content__category__clothes__sub {
+  display: none;
+}
+.content__category__auto__sub.active,
+.content__category__happliances__sub.active,
+.content__category__mobile__sub.active,
+.content__category__pc__sub.active,
+.content__category__house__sub.active,
+.content__category__clothes__sub.active {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content__excel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60%;
+}
+.content__excel h1 {
+  font-size: 29px;
+  font-weight: bold;
+  color: black;
+}
+.content__goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 780px;
+}
+.content__goods__item {
+  display: block;
+  width: 250px;
+  height: 380px;
+  background-color: #dcdcdc;
+  font-family: "PT Sans", sans-serif;
+  margin: 0 0 10px 10px;
+}
+.content__goods__item__iteminfo {
+  margin: 20px;
+}
+.content__goods__item__iteminfo img {
+  margin-bottom: 20px;
+}
+.content__goods__item .content__goods__item__link {
+  text-align: left;
+  font-size: 18px;
+  color: #767676;
+}
+.content__goods__item__buyinfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 55px 20px 20px 20px;
+}
+.content__goods__item__buyinfo a{
+  margin: 0 15px 0 auto;
+}
 /* Адаптив */
 
 @media (max-width: 1920px) {
