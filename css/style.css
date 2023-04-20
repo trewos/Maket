@@ -455,6 +455,14 @@ content {
   margin: -4px 0 0 9px;
 }
 
+/* Feedback */
+
+.feedback {
+  background-color: white;
+  width: 466px;
+  height: 578px;
+}
+
 /* Адаптив */
 
 @media (max-width: 1920px) {
