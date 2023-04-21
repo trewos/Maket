@@ -26,3 +26,25 @@ $(document).ready(function() {
     $(this).find('ul').removeClass('active');
   });
 });
+
+const link = document.querySelector('#header__contacts__feedback')
+const feedback = document.querySelector('#feedback')
+link.addEventListener('click', function(){
+  event.preventDefault();
+  feedback.classList.add('show' , 'fade-in');
+  setTimeout(() => {
+    feedback.classList.remove('fade-in');
+  }, 290);
+});
+const hideLinks = document.querySelectorAll('.feedback__container__close');
+hideLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    feedback.classList.add('fade-out');
+
+    setTimeout(() => {
+      feedback.classList.remove('show');
+      feedback.classList.remove('fade-out');
+    }, 290);
+  });
+});
