@@ -7,243 +7,298 @@
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <div class="web">
+  <!--Website-->
+  <div class="website">
+    <!--Header-->
     <header class="header">
-    <div class="header__container">
-      <div class="header__company">
-        <div class="header__logo">
-          <a href="#"><img src="https://www.colorhexa.com/77777f.png" alt="logo" width="100px" height="100px"></a>
-        </div>
-        <div class="header__name">
-          <h2 class="header__name__h">Назва<br>
+      <div class="header__container">
+        <div class="header__company">
+          <div class="header__company-logo">
+            <a href="#"><img src="https://www.colorhexa.com/77777f.png" alt="logo" width="100px" height="100px"></a>
+          </div>
+          <div class="header__company-name">
+            <h2 class="header__company-name-h">Назва<br>
             компанії</h2>
-          <p class="header__name__p">найкраща компанія</p>
+            <p class="header__company-name-p">найкраща компанія</p>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <ul class="header__contacts-list">
+            <li class="header__contacts-item">
+              <a class="header__contacts-telephone" href="tel:+380667776655">+3 8(066) 777-66-55</a><br>
+            </li>
+            <li class="header__contacts-item">
+              <a class="header__contacts-telephone" href="tel:+380667776655">+3 8(066) 777-66-55</a><br>
+            </li>
+            <li class="header__contacts-item">
+              <a id="header__contacts-feedback" href="#">Зворотній зв'язок</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="header__contacts">
-        <ul class="header__contacts__list">
-          <li class="header__contacts__item">
-            <a class="header__contacts__telephone" href="tel:+380667776655">+3 8(066) 777-66-55</a><br>
+    </header>
+    <!--Menu-->
+    <div class="menu">
+      <div class="menu__container">
+        <div class="menu__toggle"><span class="menu__toggle__icon"></span></div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#">Головна</a>
           </li>
-          <li class="header__contacts__item">
-            <a class="header__contacts__telephone" href="tel:+380667776655">+3 8(066) 777-66-55</a><br>
+          <li class="menu__list-item">
+            <a href="#">Каталог</a>
           </li>
-          <li class="header__contacts__item"><a id="header__contacts__feedback" href="#">Зворотній зв'язок</a></li>
+          <li class="menu__list-item">
+            <a href="#">Доставка і оплата</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#">Контакти</a>
+          </li>
         </ul>
       </div>
     </div>
-</header>
-    <menu class="menu">
-  <div class="menu__container">
-    <div class="menu__toggle">
-      <span class="menu__toggle__icon"></span>
-    </div>
-      <ul class="menu__list">
-        <li class="menu__list__item"><a href="#">Головна</a></li>
-        <li class="menu__list__item"><a href="#">Каталог</a></li>
-        <li class="menu__list__item"><a href="#">Доставка і оплата</a></li>
-        <li class="menu__list__item"><a href="#">Прайс-лист</a></li>
-        <li class="menu__list__item"><a href="#">Контакти</a></li>
-      </ul>
-  </div>
-</menu>
+    <!--Slider-->
     <div class="slider">
-    <div class="slider__container">
-      <div class="slider__item">
-        <img src="img/slider/item/slider__item1.png" alt="slider__item1">
-      </div>
-      <div class="slider__item">
-        <img src="img/slider/item/slider__item2.png" alt="slider__item2">
+      <div class="slider__container">
+        <div class="slider__item"><img src="img/slider/item/slider__item1.png" alt="slider__item1"></div>
+        <div class="slider__item"><img src="img/slider/item/slider__item2.png" alt="slider__item2"></div>
       </div>
     </div>
-  </div>
-    <content>
-  <div class="content__container">
-    <ul class="content__way">
-      <li><a href="#">Головна</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Побутова техніка</a></li>
-    </ul>
-    <div class="content__block">
-      <nav class="content__category">
-          <div class="content__category__auto">
-            <p>Автомобілі</p>
-            <ul class="content__category__auto__sub">
-              <li><a href="#">Акумулятор</a></li>
-              <li><a href="#">Масло</a></li>
-              <li><a href="#">Омивач</a></li>
-            </ul>
-          </div>
-          <div class="content__category__happliances">
-            <p>Побутова техніка</p>
-            <ul class="content__category__happliances__sub">
-              <li><a href="#">Мікрохвильовки</a></li>
-              <li><a href="#">Холодильник</a></li>
-              <li><a href="#">Пральні машини</a></li>
-              <li><a href="#">Чайники</a></li>
-            </ul>
-          </div>
-          <div class="content__category__mobile">
-            <p>Мобільна техніка</p>
-            <ul class="content__category__mobile__sub">
-              <li><a href="#">Смартфони</a></li>
-              <li><a href="#">Стаціонарні телефони</a></li>
-              <li><a href="#">Зарядні прилади</a></li>
-              <li><a href="#">Аксесуари</a></li>
-            </ul>
-          </div>
-          <div class="content__category__pc">
-            <p>Комп'ютери</p>
-            <ul class="content__category__pc__sub">
-              <li><a href="#">Процесори</a></li>
-              <li><a href="#">Відеокарти</a></li>
-              <li><a href="#">Аксесуари</a></li>
-            </ul>
-          </div>
-          <div class="content__category__clothes">
-            <p>Одяг</p>
-            <ul class="content__category__clothes__sub">
-              <li><a href="#">Кофти</a></li>
-              <li><a href="#">Штани</a></li>
-              <li><a href="#">Шорти</a></li>
-              <li><a href="#">Шкарпетки</a></li>
-              <li><a href="#">Футболки</a></li>
-            </ul>
-          </div>
-          <div class="content__category__house">
-            <p>Нерухомість</p>
-            <ul class="content__category__house__sub">
-              <li><a href="#">Квартири</a></li>
-              <li><a href="#">Приватні будинки</a></li>
-            </ul>
-          </div>
-          <div class="content__excel">
-            <a href="#"><img src="/img/content/category/excel.png"></a>
-            <a href="#"><h1>Прайс-лист</h1></a>
-          </div>
-      </nav>
-      <div class="content__goods">
-        <div class="content__goods__container">
-          <div class="content__goods__item">
-          <div class="content__goods__item__iteminfo">
-            <img class="content__goods__item__img" src="/img/content/goods/nophoto.png">
-            <a href="#" class="content__goods__item__link">Шокований чайник, який потрібно купити!</a>
-          </div>
-          <div class="content__goods__item__buyinfo">
-            <p>1 700 грн.</p>
-            <a href="#"><img src="/img/content/goods/addtobasket.png"></a>
-          <div>
-        </div>
-      </div>
-    </div>
-          <div class="content__goods__item">
-          <div class="content__goods__item__iteminfo">
-            <img class="content__goods__item__img" src="/img/content/goods/nophoto.png">
-            <a href="#" class="content__goods__item__link">Шокований чайник, який потрібно купити!</a>
-          </div>
-          <div class="content__goods__item__buyinfo">
-            <p>1 700 грн.</p>
-            <a href="#"><img src="/img/content/goods/addtobasket.png"></a>
-            <div>
-            </div>
-          </div>
-        </div>
-          <div class="content__goods__item">
-          <div class="content__goods__item__iteminfo">
-            <img class="content__goods__item__img" src="/img/content/goods/nophoto.png">
-            <a href="#" class="content__goods__item__link">Шокований чайник, який потрібно купити!</a>
-          </div>
-          <div class="content__goods__item__buyinfo">
-            <p>1 700 грн.</p>
-            <a href="#"><img src="/img/content/goods/addtobasket.png"></a>
-            <div>
-            </div>
-          </div>
-        </div>
-          <div class="content__goods__item">
-          <div class="content__goods__item__iteminfo">
-            <img class="content__goods__item__img" src="/img/content/goods/nophoto.png">
-            <a href="#" class="content__goods__item__link">Шокований чайник, який потрібно купити!</a>
-          </div>
-          <div class="content__goods__item__buyinfo">
-            <p>1 700 грн.</p>
-            <a href="#"><img src="/img/content/goods/addtobasket.png"></a>
-            <div>
-            </div>
-          </div>
-        </div>
-          <div class="content__goods__item">
-          <div class="content__goods__item__iteminfo">
-            <img class="content__goods__item__img" src="/img/content/goods/nophoto.png">
-            <a href="#" class="content__goods__item__link">Шокований чайник, який потрібно купити!</a>
-          </div>
-          <div class="content__goods__item__buyinfo">
-            <p>1 700 грн.</p>
-            <a href="#"><img src="/img/content/goods/addtobasket.png"></a>
-            <div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <ul class="content__goods__numberlist">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li class="content__goods__numberlist__select"><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">6</a></li>
-          <li><a href="#">7</a></li>
+    <!--Content-->
+    <div class="content">
+      <div class="content__container">
+        <ul class="content__way">
+          <li class="content__way-item">
+            <a href="#" class="content__way-link">Головна</a>
+          </li>
+          <li class="content__way-item">
+            <a href="#" class="content__way-link">Каталог</a>
+          </li>
+          <li class="content__way-item">
+            <a href="#" class="content__way-link">Побутова техніка</a>
+          </li>
         </ul>
-        <div class="content__goods__info">
-          <p class="content__goods__info__1">Україна - це держава, розташована в Центральній та Східній Європі. Займає 42-е місце в світі за населенням, а її територія охоплює 603 628 квадратних кілометрів. Столицею України є місто Київ, яке має багату історію і культурне значення. Україна має багату природу, включаючи Карпатські гори на заході та Чорне море на півдні. Країна також має багату культурну спадщину, яка охоплює різні періоди історії, від скіфських часів до сучасної епохи. Українська кухня також є дуже різноманітною та смачною.</p>
-          <p> Україна є демократичною парламентською республікою, яка має розвинену економіку та промисловість. Країна має великий потенціал у сільському господарстві, виробництві сталі, енергетиці та інших галузях. Україна також має важливе місце на світовій карті як транзитний коридор між Європою та Азією. Протягом останніх років Україна пройшла через складні політичні та економічні перетворення. Однак країна залишається різноманітною та мультикультурною державою з багатим потенціалом для майбутнього розвитку.</p>
+        <div class="content__block">
+          <!--Left Content (Category)-->
+          <nav class="content__category">
+            <div class="content__category-auto">
+              <p class="content__category-title">Автомобілі</p>
+              <ul class="content__category-auto-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Акумулятор</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Масло</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Омивач</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__category-happliances">
+              <p class="content__category-title">Побутова техніка</p>
+              <ul class="content__category-happliances-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Мікрохвильовки</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Холодильник</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Пральні машини</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Чайники</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__category-mobile">
+              <p class="content__category-title">Мобільна техніка</p>
+              <ul class="content__category-mobile-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Смартфони</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Зарядні прилади</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Аксесуари</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__category-pc">
+              <p class="content__category-title">Комп'ютери</p>
+              <ul class="content__category-pc-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Процесори</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Відеокарти</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Аксесуари</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__category-clothes">
+              <p class="content__category-title">Одяг</p>
+              <ul class="content__category-clothes-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Кофти</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Штани</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Шорти</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Шкарпетки</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Футболки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__category-house">
+              <p class="content__category-title">Нерухомість</p>
+              <ul class="content__category-house-list">
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Квартири</a>
+                </li>
+                <li class="content__category-item">
+                  <a href="#" class="content__category-link">Приватні будинки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content__excel">
+              <a href="#" class="content__excel-link"><img src="img/content/category/excel.png" alt="excel"></a> <a href="#" class="content__excel-link">
+              <h1 class="content__excel-title">Прайс-лист</h1></a>
+            </div>
+          </nav>
+          <!--Right Content (Goods)-->
+          <div class="content__goods">
+            <div class="content__goods__container">
+              <div class="content__goods-item">
+                <div class="content__goods-item-info">
+                  <img class="content__goods-item-image" src="img/content/goods/nophoto.png" alt="nophoto"> <a href="#" class="content__goods-item-link">Шокований чайник, який потрібно купити!</a>
+                </div>
+                <div class="content__goods-item-buyinfo">
+                  <p class="content__goods-item-price">1 700 грн.</p><a href="#" class="content__goods-item-add-to-basket"><img src="img/content/goods/addtobasket.png" alt="addtobasket" class="content__goods-item-add-to-basket-image"></a>
+                </div>
+              </div>
+              <div class="content__goods-item">
+                <div class="content__goods-item-info">
+                  <img class="content__goods-item-image" src="img/content/goods/nophoto.png" alt="nophoto"> <a href="#" class="content__goods-item-link">Шокований чайник, який потрібно купити!</a>
+                </div>
+                <div class="content__goods-item-buyinfo">
+                  <p class="content__goods-item-price">1 700 грн.</p><a href="#" class="content__goods-item-add-to-basket"><img src="img/content/goods/addtobasket.png" alt="addtobasket" class="content__goods-item-add-to-basket-image"></a>
+                </div>
+              </div>
+              <div class="content__goods-item">
+                <div class="content__goods-item-info">
+                  <img class="content__goods-item-image" src="img/content/goods/nophoto.png" alt="nophoto"> <a href="#" class="content__goods-item-link">Шокований чайник, який потрібно купити!</a>
+                </div>
+                <div class="content__goods-item-buyinfo">
+                  <p class="content__goods-item-price">1 700 грн.</p><a href="#" class="content__goods-item-add-to-basket"><img src="img/content/goods/addtobasket.png" alt="addtobasket" class="content__goods-item-add-to-basket-image"></a>
+                </div>
+              </div>
+              <div class="content__goods-item">
+                <div class="content__goods-item-info">
+                  <img class="content__goods-item-image" src="img/content/goods/nophoto.png" alt="nophoto"> <a href="#" class="content__goods-item-link">Шокований чайник, який потрібно купити!</a>
+                </div>
+                <div class="content__goods-item-buyinfo">
+                  <p class="content__goods-item-price">1 700 грн.</p><a href="#" class="content__goods-item-add-to-basket"><img src="img/content/goods/addtobasket.png" alt="addtobasket" class="content__goods-item-add-to-basket-image"></a>
+                </div>
+              </div>
+              <div class="content__goods-item">
+                <div class="content__goods-item-info">
+                  <img class="content__goods-item-image" src="img/content/goods/nophoto.png" alt="nophoto"> <a href="#" class="content__goods-item-link">Шокований чайник, який потрібно купити!</a>
+                </div>
+                <div class="content__goods-item-buyinfo">
+                  <p class="content__goods-item-price">1 700 грн.</p><a href="#" class="content__goods-item-add-to-basket"><img src="img/content/goods/addtobasket.png" alt="addtobasket" class="content__goods-item-add-to-basket-image"></a>
+                </div>
+              </div>
+            </div>
+            <!--Product information and page number-->
+            <ul class="content__goods-numberlist">
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">1</a>
+              </li>
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">2</a>
+              </li>
+              <li class="content__goods-numberlist-item content__goods-numberlist-item--selected">
+                <a href="#" class="content__goods-numberlist-link">3</a>
+              </li>
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">4</a>
+              </li>
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">5</a>
+              </li>
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">6</a>
+              </li>
+              <li class="content__goods-numberlist-item">
+                <a href="#" class="content__goods-numberlist-link">7</a>
+              </li>
+            </ul>
+            <div class="content__goods-info">
+              <p class="content__goods-info-1">Україна - це держава, розташована в Центральній та Східній Європі. Займає 42-е місце в світі за населенням, а її територія охоплює 603 628 квадратних кілометрів. Столицею України є місто Київ, яке має багату історію і культурне значення. Україна має багату природу, включаючи Карпатські гори на заході та Чорне море на півдні. Країна також має багату культурну спадщину, яка охоплює різні періоди історії, від скіфських часів до сучасної епохи. Українська кухня також є дуже різноманітною та смачною.</p>
+              <p class="content__goods-info-2">Україна є демократичною парламентською республікою, яка має розвинену економіку та промисловість. Країна має великий потенціал у сільському господарстві, виробництві сталі, енергетиці та інших галузях. Україна також має важливе місце на світовій карті як транзитний коридор між Європою та Азією. Протягом останніх років Україна пройшла через складні політичні та економічні перетворення. Однак країна залишається різноманітною та мультикультурною державою з багатим потенціалом для майбутнього розвитку.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</content>
+    <!--Footer-->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__info">
-          <p>© 2023 ЗАО «Компанія»</p>
-          <a href="mailto:info@name.ua">info@name.ua</a>
+          <p class="footer__text">© 2023 ЗАО «Компанія»</p><a href="mailto:info@name.ua" class="footer__link">info@name.ua</a>
         </div>
         <ul class="footer__menu">
-          <li><a href="#">Головна</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка і оплата</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__link">Головна</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__link">Каталог</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__link">Доставка і оплата</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__link">Прайс-лист</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__link">Контакти</a>
+          </li>
         </ul>
         <div class="footer__company">
-          <img src="/img/footer/company.png" alt="logo__foot" width="36" height="38">
-          <p><u>Розробка сайту</u> — <br>
+          <img src="img/footer/company.png" alt="logo__foot" width="36" height="38" class="footer__logo">
+          <p class="footer__text"><u>Розробка сайту</u> —<br>
           компанія "Назва компанії"</p>
         </div>
       </div>
     </footer>
+    <!--Feedback-->
     <div id="feedback">
       <div class="feedback__container">
-        <h2>Зворотній зв'язок</h2>
-        <div class="feedback__input">
-        <label for="feedback__name">Ваше ім'я <span class="required">*</span></label>
-        <input type="text" id="feedback__name" name="feedback__name" pattern="[А-Яа-я]+" placeholder="Поле обов'язкове для заповнення" required>
-        <label for="feedback__phone">Телефон <span class="required">*</span></label>
-        <input type="tel" id="feedback__phone" name="feedback__phone" pattern="\+380 \([0-9]{2}\) [0-9]{3}\-[0-9]{4}" placeholder="Поле обов'язкове для заповнення" required>
-        <label for="feedback__email">Email <span class="required">*</span></label>
-        <input type="email" id="feedback__email" name="feedback__email" placeholder="Поле обов'язкове для заповнення" required>
-        <label for="feedback__massage">Повідомлення</label>
-        <textarea id="feedback__massage"></textarea>
-        <input type="submit" class="feedback__submit__info" value="Відправити">
-        </div>
-        <a class="feedback__container__close"><span>&#x2715</span></a>
+        <h2 class="feedback__title">Зворотній зв'язок</h2>
+        <form class="feedback__input">
+          <label class="feedback__label" for="feedback__name">Ваше ім'я <span class="feedback__required">*</span></label> <input type="text" id="feedback__name" name="feedback__name" class="feedback__input-field feedback__input-field--name" pattern="[А-Яа-я]+" placeholder="Поле обов'язкове для заповнення" required=""> <label class="feedback__label" for="feedback__phone">Телефон <span class="feedback__required">*</span></label> <input type="tel" id="feedback__phone" name="feedback__phone" class="feedback__input-field feedback__input-field--phone" pattern="\+380 \([0-9]{2}\) [0-9]{3}\-[0-9]{4}" placeholder="Поле обов'язкове для заповнення" required=""> <label class="feedback__label" for="feedback__email">Email <span class="feedback__required">*</span></label> <input type="email" id="feedback__email" name="feedback__email" class="feedback__input-field feedback__input-field--email" placeholder="Поле обов'язкове для заповнення" required=""> <label class="feedback__label" for="feedback__massage">Повідомлення</label>
+          <textarea id="feedback__massage" class="feedback__input-field feedback__input-field--massage"></textarea> <input type="submit" class="feedback__submit feedback__submit-info" value="Відправити">
+        </form><a class="feedback__close-btn"><span>&#x2715</span></a>
       </div>
     </div>
   </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/script.js"></script>
+  <!--Script`s-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-
