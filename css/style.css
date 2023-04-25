@@ -15,7 +15,7 @@
   font-weight: normal;
 }
 
-/* Обнулення CSS стилів */
+/* Resetting CSS styles */
 
 * {
   padding: 0;
@@ -526,14 +526,6 @@ h6 {
 }
 .feedback__input input::placeholder {
   font-style: italic;
-}
-.feedback__input input:required {
-  border: 1px solid red;
-  box-shadow: inset 0 0 6px red;
-}
-.feedback__input input:required:focus {
-  box-shadow: inset 0 0 6px white;
-  border: 1px solid #c3c3c3;
 }
 .feedback__input .feedback__submit-info {
   height: 42px;

@@ -1,14 +1,14 @@
-/* Натискання на burger-menu */
+/* Clicking on burger-menu */
 
 const menuClick = document.querySelector('.menu__container');
 const menuList = document.querySelector('.menu__list');
 const menuToggle = document.querySelector('.menu__toggle');
 menuClick.addEventListener('click', function() {
-  menuToggle.classList.toggle('active'); /* Додає або видаляє 'active' до / з елемента 'menuToggle' */
-  menuList.classList.toggle('active'); /* Додає або видаляє 'active' до / з елемента 'menuList' */
+  menuToggle.classList.toggle('active'); /* Adds or removes 'active' from/to the 'menuToggle' element */
+  menuList.classList.toggle('active'); /* Adds or removes 'active' from/to the 'menuList' element */
 });
 
-/* Налаштування slider */
+/* Setting-up slider */
 
 $(document).ready(function() {
   $('.slider__container').slick({
@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 });
 
-/* Виконує функцію, коли при наведенні на елемент, з'являються підкатегорії. */
+/* Executes a function when subcategories appear on hovering over an element */
 
 $(document).ready(function() {
   $('.content__category-auto, .content__category-happliances, .content__category-mobile, .content__category-pc, .content__category-clothes, .content__category-house').hover(function() {
@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
 });
 
-/* При натисканні на посилання '#header__contacts-feedback' відкриває вікно 'feedback' з fade ефектом */
+/* On clicking the '#header__contacts-feedback' link, opens the 'feedback' window with a fade effect */
 
 const link = document.querySelector('#header__contacts-feedback')
 const feedback = document.querySelector('#feedback')
@@ -44,7 +44,7 @@ link.addEventListener('click', function(){
   }, 280);
 });
 
-/* При натисканні на посилання .feedback__close-btn' закриває вікно 'feedback' з fade ефектом */
+/* On clicking the '.feedback__close-btn' link, closes the 'feedback' window with a fade effect */
 
 const hideLinks = document.querySelectorAll('.feedback__close-btn');
 hideLinks.forEach(link => {
@@ -57,4 +57,62 @@ hideLinks.forEach(link => {
       feedback.classList.remove('fade-out');
     }, 280);
   });
+});
+
+/* Checking for field completeness and input correctness */
+
+const feedbackName = document.getElementById('feedback__name');
+const feedbackPhone = document.getElementById('feedback__phone');
+const feedbackEmail = document.getElementById('feedback__email');
+
+function validateFeedbackName() {
+  const regex = /^[А-ЩЬЮЯҐЄІЇа-щьюяґєії]/;
+  if (!regex.test(feedbackName.value.trim())) {
+    feedbackName.style.border = '1px solid red';
+    feedbackName.style.boxShadow = 'inset 0 0 6px red';
+    return false;
+  } else {
+    feedbackName.style.border = '';
+    feedbackName.style.boxShadow = '';
+    return true;
+  }
+}
+
+function validateFeedbackPhone() {
+  const regex = /^\+380[0-9]{9}/;
+  if (!regex.test(feedbackPhone.value.trim())) {
+    feedbackPhone.style.border = '1px solid red';
+    feedbackPhone.style.boxShadow = 'inset 0 0 6px red';
+    return false;
+  } else {
+    feedbackPhone.style.border = '';
+    feedbackPhone.style.boxShadow = '';
+    return true;
+  }
+}
+
+function validateFeedbackEmail() {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!regex.test(feedbackEmail.value.trim())) {
+    feedbackEmail.style.border = '1px solid red';
+    feedbackEmail.style.boxShadow = 'inset 0 0 6px red';
+    return false;
+  } else {
+    feedbackEmail.style.border = '';
+    feedbackEmail.style.boxShadow = '';
+    return true;
+  }
+}
+
+function validateForm() {
+  const validName = validateFeedbackName();
+  const validPhone = validateFeedbackPhone();
+  const validEmail = validateFeedbackEmail();
+
+  return validName && validPhone && validEmail;
+}
+
+document.querySelector('.feedback__submit').addEventListener('click', function(event) {
+  if (!validateForm()) {
+  }
 });
